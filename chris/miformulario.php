@@ -5,6 +5,7 @@
 		<title>
 			Formulario de Prueba
 		</title>
+		<link rel="stylesheet" type="text/css" href="css/app.css">
 	</head>
 	<body>
 		<div id="page">
@@ -15,16 +16,16 @@
 				<div id="titulo">
 					<h1>Mi Primer Formulario en Html</h1>
 				</div>
-				<nav id="menu">
-					<ul>
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#"></a>Servicios</li>
-						<li><a href="#">Curiosidades</a></li>
-						<li><a href="#">Contacto</a></li>
-					</ul>
-				</nav>
 			</header>
-			<section>
+			<nav id="menu">
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Curiosidades</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+			<section id="pagina">
 				<div id="sidebar">
 					<div class="article">
 					<article>
