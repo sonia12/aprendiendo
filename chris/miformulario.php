@@ -23,10 +23,11 @@
 					<li><a href="#">Servicios</a></li>
 					<li><a href="#">Curiosidades</a></li>
 					<li><a href="#">Contacto</a></li>
+					<li><a href="http://foundation.zurb.com/">Foundation</a></li>
 				</ul>
 			</nav>
 			<section id="pagina">
-				<div id="sidebar">
+				<div id="sidebar" class="large-3 columns">
 					<div class="article">
 					<article>
 						<h3>articulo1</h3>
