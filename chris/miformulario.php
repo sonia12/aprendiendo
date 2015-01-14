@@ -13,7 +13,7 @@
 					<img src="img/logo2.png" width="100px" height="100px">
 				</div>
 				<div id="titulo">
-					<h1>Mi Primer Formulario</h1>
+					<h1>Mi Primer Formulario en Html</h1>
 				</div>
 				<nav id="menu">
 					<ul>
