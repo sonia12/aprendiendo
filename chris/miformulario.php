@@ -77,9 +77,9 @@
 						<label>Password</label>
 						<input type="password" name="pwd">
 						<label>Ingrese un Numero</label>
-						<input type="number" name="num1">
+						<input type="text" name="num1">
 						<label>Ingrese un segundo Numero</label>
-						<input type="number" name="num2">
+						<input type="text" name="num2">
 						<input type="radio" name="operacion" value="suma" checked><label>Suma</label>
 						<input type="radio" name="operacion" value="resta"><label>Resta</label>
 						<input type="radio" name="operacion" value="producto"><label>Producto</label>
