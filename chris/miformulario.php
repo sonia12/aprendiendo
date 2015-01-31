@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>
-			Formulario de Prueba
-		</title>
-		<link rel="stylesheet" type="text/css" href="css/app.css">
+	<head> 
+		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Formulario</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="js/vendor/modernizr.js"></script>
 	</head>
 	<body>
 		<div id="page">
@@ -17,15 +18,34 @@
 					<h1>Mi Primer Formulario en Html</h1>
 				</div>
 			</header>
-			<nav id="menu">
-				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Curiosidades</a></li>
-					<li><a href="#">Contacto</a></li>
-					<li><a href="http://foundation.zurb.com/">Foundation</a></li>
-				</ul>
-			</nav>
+			<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">My Site</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">Right Button Active</a></li>
+      <li class="has-dropdown">
+        <a href="#">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+          <li class="active"><a href="#">Active link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="#">Left Nav Button</a></li>
+    </ul>
+  </section>
+</nav>
 			<section id="pagina">
 				<div id="sidebar" class="large-3 columns">
 					<div class="article">
@@ -67,30 +87,57 @@
 					</article>
 					</div>
 				</div>
-				<div id="content">
+				<div id="content" class="large-9 columns">
 					<!-- <h2>Mi video</h2>
 					 <video src="videos/video.webm" width="320" height="240" autoplay></video> -->
 					<h2>Ingrese sus Datos</h2>
-					<form action="resultado.php" method="post">
-						<label>Nombre</label>
-						<input type="text" name="nombre">
-						<label>Password</label>
-						<input type="password" name="pwd">
-						<label>Ingrese un Numero</label>
-						<input type="text" name="num1">
-						<label>Ingrese un segundo Numero</label>
-						<input type="text" name="num2">
-						<input type="radio" name="operacion" value="suma" checked><label>Suma</label>
-						<input type="radio" name="operacion" value="resta"><label>Resta</label>
-						<input type="radio" name="operacion" value="producto"><label>Producto</label>
-						<input type="radio" name="operacion" value="division"><label>Division</label>
-						<input type="submit" name="aceptar" value="Aceptar">
-					</form>
-				</div>
+						<form action="resultado.php" method="post">
+							<div class="row">
+								<div class="large-12 columns">
+									<label>Nombre</label>
+									<input type="text" name="nombre">
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-12 columns">
+									<label>Password</label>
+									<input type="password" name="pwd">
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-12 columns">
+									<label>Ingrese un Numero</label>
+									<input type="text" name="num1">
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-12 columns">
+									<label>Ingrese un segundo Numero</label>
+									<input type="text" name="num2">
+								</div>
+							</div>
+							<div class="large-12 columns">
+								<input type="radio" name="operacion" value="suma" checked><label>Suma</label>
+								<input type="radio" name="operacion" value="resta"><label>Resta</label>
+								<input type="radio" name="operacion" value="producto"><label>Producto</label>
+								<input type="radio" name="operacion" value="division"><label>Division</label>
+							</div>
+							<div class="row">
+								<div href="#" class="button" >Aceptar</a>
+								</div>
+							</div>
+						</form>
+					</div>
 			</section>
 			<footer>
 				<label>Hecho Por <a href="#">Mio</a></label>
 			</footer>
 		</div>
+
+		<script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 	</body>
 </html>
