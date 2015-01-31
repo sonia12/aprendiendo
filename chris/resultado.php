@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Resultados</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
 	<?php
@@ -11,6 +12,9 @@
 		$num1 = $_POST['num1'];
 		$num2 = $_POST['num2'];
 		$ope = $_POST['operacion'];
+		echo "<div id=\"titulo\">
+						<h1>Resultados</h1>
+					</div>";
 
 		echo "Hola Mi Nombre es: ".$nom;
 		echo "<br>";
@@ -30,6 +34,20 @@
 		}
 		echo "<p> Mi Resultado es: ".$res."</p>"; 
 	?>
+	<table>
+	<tbody>
+		<tr>
+			<th></th>
+			<td></td>
+		</tr>
+		<tr>
+			
+		</tr>
+		<tfoot>
+			
+		</tfoot>
+	</tbody>
+	</table>
 </body>
 
 </html>
