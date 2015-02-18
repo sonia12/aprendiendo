@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Sacromusic</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
 	<div id="content">
 		<div id="cabezera">
-			<div id="logo">
+			<div id="logo" >
 				<img src="img/logo.png">
 			</div>
 			<div id="menu">
 				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Quienes Somos</a></li>
-					<li><a href="#">Nuestros Artistas</a></li>
-					<li><a href="#">Eventos</a></li>
-					<li><a href="#">Noticias</a></li>
-					<li><a href="#">Contacto</a></li>
+					<li class="borde-inicio menu-elemento"><a href="#">Inicio</a></li>
+					<li class="menu-elemento"><a href="#">Quienes Somos</a></li>
+					<li class="menu-elemento"><a href="#">Nuestros Artistas</a></li>
+					<li class="menu-elemento"><a href="#">Eventos</a></li>
+					<li class="menu-elemento"><a href="#">Noticias</a></li>
+					<li class="borde-final"><a href="#">Contacto</a></li>
 				</ul>
 			</div>
 			<div id="slider">
@@ -57,8 +60,11 @@
 					</article>
 				</div>
 				</div>
-				<div id="eventos">
-					
+				<div id="mapa">
+					<h1>Mapa</h1>
+					<div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3807.384705397663!2d-66.14529099999999!3d-17.39331600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1suniversidad+mayor+de+san+simon!5e0!3m2!1ses!2sbo!4v1424276239413" width="600" height="450" frameborder="0" style="border:0"></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -92,5 +98,11 @@
 	<div>
 		
 	</div>
+
+	 <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 </body>
 </html>
