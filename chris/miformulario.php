@@ -35,7 +35,7 @@
         <a href="#">Right Button Dropdown</a>
         <ul class="dropdown">
           <li><a href="#">First link in dropdown</a></li>
-          <li class="active"><a href="#">Active link in dropdown</a></li>
+          <li class="active"><a href="resultado.php">Active link in dropdown</a></li>
         </ul>
       </li>
     </ul>
