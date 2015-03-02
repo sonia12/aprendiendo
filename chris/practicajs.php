@@ -5,7 +5,15 @@
 	<title>Practica Con Javascript</title>
 </head>
 <body>
+	<form action="resultado.php">
+		<label>Ingrese su nombre</label>
+		<h1 id="nombre" onclick="saludar()">Hola Sonia</h1>
+	</form>
 	<script type="text/javascript">
+		function saludar() {
+			var x=document.getElementById("nombre");
+			alert(x.innerHTML);
+		}
 	//alert("Hola Mundo");
 	/*
 	*  Comentario Largo 
@@ -52,13 +60,20 @@
 	}
 	while(cont != 10);*/
 //bucle For
-function cargar(sueldos)
+/*var num = prompt("introduzca un numero",'');
+var arreglo =new array(parseInt(num));
+var cont=10;
+for (var i = 0; i < arreglo.length; i++) {
+	arreglo[i]=cont;
+	cont++;
+}*/
+/*function cargar(sueldos)
   {
     var f;
     for(f=0;f<sueldos.length;f++)
     {
       var v;
-      v=prompt('Ingrese sueldo:','');
+      v=prompt('Ingrese sueldodefined:','');
       sueldos[f]=parseInt(v); 
     }
   }
@@ -82,7 +97,7 @@ function cargar(sueldos)
   var sueldos;
   sueldos=new Array(5);
   cargar(sueldos);
-  calcularGastos(sueldos);
+  calcularGastos(sueldos);*/
 </script>
 </body>
 </html>
